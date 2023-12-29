@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&family=Varela+Round&display=swap');
+*{
+    margin: none;
+    padding: none;
+}
+
+/* slideshow container */
+
+
+.slide-container .d-block{
+    width: 100vw;
+    height: 90vh;
+    opacity: 0.55;
+}
+
+.slide-container #carouselExampleInterval{
+    margin-top: 0;
+}
+
+.slide-container .overlayer{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    background-color: #432C7A;
+    z-index: -1;
+}
+
+
+
+.slide-container .navbar{
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    z-index: 7;
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.slide-container .nav-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: row;
+    margin-right: 30px;
+}
+
+.slide-container .list-nav{
+    width: 10%;
+    color: #FCE2DB;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 120%;
+    height: 100%;
+    padding-right: 50px;
+    margin-left: -16px;
+    align-items: center;
+}
+
+.slide-container .list-nav:hover{
+    color: #80489C;
+    font-size: x-large;
+}
+
+.slide-container .nav-item #home{
+    color: #FF8FB1;
+    font-size: 150%;
+}
+
+.slide-container .carousel-caption{
+    display: flex;
+    justify-content: left;
+    margin-left: -45vw;
+}
+
+.slide-container .carousel-caption h5{
+    margin-left: -19%;
+}
+
+.slide-container #home-donate{
+    position: absolute;
+    background-color: #FF8FB1;
+    color: #432C7A;
+    border: none;
+    height: 20vh;
+    width: 40vw;
+    margin-top: -7%;
+    margin-left: 55%;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 270%;
+}
+
+.slide-container #home-donate:hover{
+    color: #FCE2DB;
+    background-color: #80489C;
+}
+
+.nav-colored { background-color:#432C7A; }
+.nav-transparent { background-color:transparent;}
+
+/* donate info container */
+.donate-info-container{
+    color:#432C7A;
+    margin-top: 5vh;
+}
+
+.donate-form-selector{
+    color:#80489C;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+.payment-form-container{
+    display: flex;
+    flex-direction: row;
+}
+.form-check{
+    margin-right: 10vw;
+}
+
+/* Personal Info Form */
+.personal-info-container{
+    margin-top: 5vh;
+}
+.personal-info-container .form-control{
+    border-radius: 0;
+}
+.personal-info-container label{
+    color:#432C7A;
+}
+
+.personal-info-container button{
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    color:#FCE2DB;
+    background-color: #80489C;
+}
+
+.personal-info-container button:hover{
+    color:#80489C;
+    background-color: #FCE2DB;
+    font-weight: bold;
+}
+
+/* Credit Card container */
+.donate-form-card{
+    margin-top: 5vh;
+}
+.form-group{
+    color:#80489C;
+    margin-bottom: 2vh;
+}
+
+.donate-form-card label{
+    margin-bottom: 1vh;
+}
+
+.donate-form-card input{
+    border-radius: 0;
+}
+
+/* donate form offline */
+.donate-form-offline{
+    margin-top: 5vh;
+}
+
+.donate-form-offline input{
+    border-radius: 0;
+}
+
+button{
+    border: none;
+    background-color: #80489C;
+    color: #FCE2DB;
+    font-size: 150%;
+    height: 6vh;
+    width: 10vw;
+    margin-top: 7vh;
+    margin-left: 10%;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #FCE2DB;
+    color: #80489C;
+}

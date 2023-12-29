@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Site</title>
+    <link rel="stylesheet" href="donate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel = "icon" href = "\landing_site\Charitable_Foundation.png" type = "image/x-icon" style = "width: 25px; height: 25px"> 
+</head>
+<body>
+  <div class="slide-container">
+        
+
+    <div style = "position: relative; background-color: #432C7A;" class="navbar">
+      
+        <ul class = "nav-item">
+          
+            <li>
+                <a href="\landing_site\index.html" id = "home" class = "list-nav">HOME</a>
+            </li>
+            <li>
+                <a href="\landing_site\index.html#about-us" class = "list-nav">ABOUT US</a>
+            </li>
+            <li>
+                <a href="\landing_site\index.html#news-events-container" class="list-nav">NEWS AND EVENTS</a>
+            </li>
+            <li>
+                <a href="\shop\browse\browse.html" class = "list-nav">SHOP</a>
+            </li>
+            <li>
+              <a href="\donate forms\donate.html" class = "list-nav">DONATE</a>
+          </li>
+        </ul>
+    </div>
+
+    
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="overlayer"></div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="https://images.pling.com/img/00/00/64/53/77/1704082/animal-bengal-tiger-swimming-4k-ultra-hd-wallpaper-for-desktop-laptop-tablet-and-mobile-phones-1920x1080.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor.</h5>
+              <p style = "width: 42vw; margin-left: 35vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint facere officia molestiae culpa minus itaque possimus repudiandae praesentium rerum dolor ex voluptates delectus, iure reiciendis architecto eius aperiam expedita quibusdam. Veniam aperiam tempora hic.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://papers.co/wallpaper/papers.co-ni68-peacock-animal-beautiful-nature-36-3840x2400-4k-wallpaper.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum dolor sit.</h5>
+              <p style = "width: 42vw; margin-left: 35vw;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corrupti assumenda iste repellat doloremque odio suscipit mollitia vel ratione, sint consequatur, accusantium molestiae sapiente delectus.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://wallpaperaccess.com/full/2555858.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum dolor sit amet.</h5>
+              <p style = "width: 42vw; margin-left: 35vw;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corrupti assumenda iste repellat doloremque odio suscipit mollitia vel ratione, sint consequatur, accusantium molestiae sapiente delectus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="donate-info-container container"><div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h1>DONATE FORM</h1>
+            <hr>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis laborum at libero nihil voluptate accusantium laboriosam, repudiandae officiis officia modi aperiam possimus necessitatibus facere error. Doloribus hic quaerat laboriosam officiis error perspiciatis, adipisci nam dolore. Doloribus odit voluptatum vero vitae tempora maiores molestias eum excepturi, labore itaque, nobis quia?</h5>
+        <div class="col-1"></div>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="donate-form-selector container">
+        <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3 class="section-title">Select method of payment</h3>
+            <hr>
+            <div class="payment-form-container">
+            <div class="form-check load-credit">
+                <input style = "border-radius: 5px;" class="form-check-input" onclick="DoSomething1()" checked type="radio" name="flexRadioDefault" id="creditcheck"  value = "credit">
+                <label class="form-check-label" for="flexRadioDefault1" >
+                  Credit/Debit Card
+                </label>
+              </div>
+            <div class="form-check load-offline">
+                <input style = "border-radius: 5px;" class="form-check-input" onclick="DoSomething()" type="radio" id="offlinecheck" name="flexRadioDefault" value = "offline">
+                <label class="form-check-label" for="flexRadioDefault2"  >
+                    Offline Payment
+                </label>
+              </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    </div>
+        
+    </div>
+
+    <div class="personal-info-container container">
+        <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3 style = "color: #80489C" class="section-title">Personal Information</h3>
+            <hr>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label id = "inputfirst" for="inputFname" class="form-label">First Name</label>
+              <input style = "border-radius: 5px;" type="text" class="form-control" id="inputFname">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLname" class="form-label">Last Name</label>
+              <input style = "border-radius: 5px;" type="text" class="form-control" id="inputLname">
+            </div>
+            <div class="col-12">
+              <label for="inputCompanyName" class="form-label">Company Name</label>
+              <input style = "border-radius: 5px;" type="text" class="form-control" id="inputCompanyName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email Address</label>
+              <input style = "border-radius: 5px;" type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input style = "border-radius: 5px;" type="text" class="form-control" id="inputZip">
+            </div>
+          </form>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    </div>
+
+    <div class="donate-form-offline">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <h3 style = "color: #80489C" class="section-title">OFFLINE PAYMENT INSTRUCTIONS</h3>
+            <hr>
+            <p>In order to make an offline donation we ask that you please follow these instructions:</p>
+            <ol>
+              <li>Make a check payable to "Animal House Shelter"</li>
+              <li>On the memo line of the check, please indicate that the donation is for "Animal House Shelter"</li>
+              <li>Please mail your check to:</li>
+            </ol>
+            <p>13005 Ernesti Rd, Huntley, IL 60142</p>
+            <p>All contributions will be gratefully acknowledged and are tax deductible.</p>
+            <div class="form-group">
+              <label for="username">Donated money ($)</label>
+              <input class = "value" style = "border-radius: 5px;" type="text" id = "value" name="money" placeholder="Enter a value" required class="form-control">
+            </div>
+            <button onclick="donate()" style = "border-radius: 5px;" type="button" class = "submit" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="donate-form-card">
+        <div class="container">
+            <div class="row">
+
+                  <div class="col-1"></div>
+                  <div class="col-10">
+                    <h3 style = "color: #80489C" class="section-title">Credit Card Information</h3>
+            <hr>
+                  <div class="tab-content">
+
+                    <div id="nav-tab-card" class="tab-pane fade show active">
+                      <form role="form">
+                        <div class="form-group">
+                          <label for="username">Full name (on the card)</label>
+                          <input style = "border-radius: 5px;" type="text" name="username" placeholder="Jason Doe" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="cardNumber">Card number</label>
+                          <div class="input-group">
+                            <input style = "border-radius: 5px;" type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <div class="form-group">
+                              <label><span class="hidden-xs">Expiration</span></label>
+                              <div class="input-group">
+                                <input style = "border-radius: 5px;" type="number" placeholder="MM" name="" class="form-control" required>
+                                <input style = "border-radius: 5px;" type="number" placeholder="YY" name="" class="form-control" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form-group mb-4">
+                              <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                                          <i class="fa fa-question-circle"></i>
+                                                      </label>
+                              <input style = "border-radius: 5px;" type="text" required class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="username">Donated money ($)</label>
+                            <input style = "border-radius: 5px;" id = "value1" class = "value" type="text" name="money" placeholder="Enter a value" required class="form-control">
+                          </div>
+          
+          
+          
+                        </div>
+                        
+                        <button onclick="donate1()" style = "border-radius: 5px;" type="button" class = "submit" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+                      </form>
+                    </div>
+                  
+                  </div></div>
+                  
+                  <div class="col-1"></div>
+            </div>
+          </div>
+          
+          
+    </div>
+    <div class="footer-container" style = "color: white; width: 100vw; background-color: #432C7A; margin-top: 5vh;">
+      <footer class="footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row my-4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                <img src="\landing_site\Charitable_Foundation.png" height="300" alt="">
+              </div>
+    
+              <p class="text-center">Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
+    
+              <ul class="list-unstyled d-flex flex-row justify-content-center">
+                <li>
+                  <a class="text-white px-2" href="#!">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-white px-2" href="#!">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="text-white ps-2" href="#!">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Animals</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Animals</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General information</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the shelter</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic data</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tenders</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Contact</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+
+    <script src="donate.js"></script>
+</body>
+</html>

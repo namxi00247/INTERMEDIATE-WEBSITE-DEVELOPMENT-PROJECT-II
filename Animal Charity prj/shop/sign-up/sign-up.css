@@ -1,0 +1,32 @@
+#form-container{
+    background-color: #FCE2DB;
+}
+
+#form-inner{
+    height: 70vh;
+}
+
+.field{
+    margin-top: -4vh;
+}
+
+.btn{
+    background-color: #432C7A;
+    color: #FCE2DB; 
+    border: 0;
+    border-radius: 5px;
+    height: 6vh;
+    width: 10vw;
+    margin-right: 2vw;
+    margin-top: 3vh;
+}
+
+.btn:hover{
+    color: #432C7A;
+    background-color: #FCE2DB; 
+    border: 0;
+    border-radius: 5px;
+    height: 6vh;
+    width: 10vw;
+}
+
